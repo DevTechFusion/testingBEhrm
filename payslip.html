@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payslip</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+<style>
+  page[size="A4"] {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .subtitle1 {
+    border-bottom: 2px solid black;
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  .pay-allowances {
+    background-color: #edecef;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+</style>
+
+<body style="margin: 0px; padding: 0px; font-family: 'Montserrat', sans-serif">
+  <page size="A4" style="background: #ffff; display: block; margin: 0 auto">
+    <section>
+      <div class="d-flex justify-content-center my-4">
+        <img
+          src="https://metalogix-support-portal-app-bucket.s3.amazonaws.com/images/cecba9a0-254c-11ee-92a3-a78206eec4c4.jpeg"
+          loading="lazy" width="210px" height="60px" alt="" />
+      </div>
+      <div class="container mt-4">
+        <h3 class="subtitle1 text-center">Payslip</h3>
+      </div>
+      <div>
+        <div class="mt-4">
+          <div class="d-flex justify-content-between mb-2">
+            <div class="d-flex">
+              <p class="fw-bold">Employee ID :</p>
+              <p class="ms-1">emp_id</p>
+            </div>
+            <div class="d-flex">
+              <p class="fw-bold">Employee Status :</p>
+              <p class="ms-1">Permanent</p>
+            </div>
+          </div>
+          <p class="fw-bold text-center mb-4">
+            Salary for the month of monthYear
+          </p>
+          <div class="mt-4">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="d-flex">
+                <p class="fw-bold">Employee Name :</p>
+                <p class="ms-1">emp_name</p>
+              </div>
+              <div class="d-flex">
+                <p class="fw-bold">Designation :</p>
+                <p class="ms-1">designation</p>
+              </div>
+            </div>
+            <p class="fw-bold text-center mb-4 pay-allowances">
+              Pay & Allowances
+            </p>
+            <div class="w-75 mx-auto">
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Basic Pay</p>
+                <p class="fw-semibold">basic_salary</p>
+              </div>
+
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">House Rent Allowance</p>
+                <p class="fw-semibold">rent_allowance</p>
+              </div>
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Food Allowance</p>
+                <p class="fw-semibold">food_allowance</p>
+              </div>
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Medical Allowance</p>
+                <p class="fw-semibold">medical_allowance</p>
+              </div>
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Conveyance Allowance</p>
+                <p class="fw-semibold">conveyance_allowance</p>
+              </div>
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Other Payment</p>
+                <p class="fw-semibold">other_payment</p>
+              </div>
+
+              <!-- <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Education Allowance</p>
+                <p class="fw-semibold">education_allowance</p>
+              </div> -->
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Overtime</p>
+                <p class="fw-semibold">overtime</p>
+              </div>
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Loan</p>
+                <p class="fw-semibold">loan</p>
+              </div>
+              <div class="d-flex justify-content-between ">
+                <p class="fw-semibold">Commission</p>
+                <p class="fw-semibold">commission</p>
+              </div>
+            </div>
+          </div>
+          <p class="fw-bold text-center mb-4 pay-allowances">Deductions</p>
+          <div class="w-75 mx-auto">
+
+            <div class="d-flex justify-content-between ">
+              <p class="fw-semibold">Income Tax Deduction</p>
+              <p class="fw-semibold">monthly_tax</p>
+            </div>
+
+            <div class="d-flex justify-content-between ">
+              <p class="fw-semibold">Loan Deduction</p>
+              <p class="fw-semibold">loan_deduction</p>
+            </div>
+            <div class="d-flex justify-content-between ">
+              <p class="fw-semibold">Lunch Deduction</p>
+              <p class="fw-semibold">lunch_deduction</p>
+            </div>
+            <div class="d-flex justify-content-between ">
+              <p class="fw-semibold">Fine Deduction</p>
+              <p class="fw-semibold">fine_deduction</p>
+            </div>
+
+          </div>
+
+        </div>
+        <hr class="mb-4">
+
+
+        <div class="text-end ">
+          <p>Total Earning</p>
+          <p>Rs.totalEarning/-</p>
+        </div>
+        <div class="text-end ">
+          <p>Total Deduction</p>
+          <p>Rs.totalDeduction/-</p>
+        </div>
+        <div class="text-end ">
+          <p>Net Salary</p>
+          <p>
+            Rs.net_salary/-
+          </p>
+        </div>
+        <p class="fw-bold text-center mb-4"> Salary credited to your account #
+          bank_account at Meezan
+          Bank, High Street, Sahiwal
+        </p>
+         <div className="d-flex justify-content-center my-4">
+            <img
+              src="https://metalogix-support-portal-app-bucket.s3.amazonaws.com/images/3bd3cfa0-255c-11ee-8e4a-df7047a83c0d.jpeg"
+              loading="lazy"
+              width="100%"
+              height="40px"
+              alt=""
+            />
+          </div>
+            <p class="fw-bold text-center mb-4">Address: Office #2 Ground Floor Saeed centre Farid town road Sahiwal
+        </p>
+      </div>
+      </div>
+    </section>
+  </page>
+  <!-- End Feature -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- fontawesome -->
+  <!-- <script src="https://kit.fontawesome.com/e30259c958.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
